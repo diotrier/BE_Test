@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Library System</h1>
+
+    <h2>Borrow a Book</h2>
+    <form id="borrowForm">
+        <input type="text" id="borrowMemberCode" placeholder="Member Code" required>
+        <input type="text" id="borrowBookCode" placeholder="Book Code" required>
+        <button type="submit">Borrow</button>
+    </form>
+    <p id="borrowMessage"></p>
+
+    <h2>Return a Book</h2>
+    <form id="returnForm">
+        <input type="text" id="returnMemberCode" placeholder="Member Code" required>
+        <input type="text" id="returnBookCode" placeholder="Book Code" required>
+        <button type="submit">Return</button>
+    </form>
+    <p id="returnMessage"></p>
+
+    <h2>Available Books</h2>
+    <button id="fetchBooks">Fetch Books</button>
+    <ul id="booksList"></ul>
+
+    <h2>Members</h2>
+    <button id="fetchMembers">Fetch Members</button>
+    <ul id="membersList"></ul>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
